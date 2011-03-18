@@ -2,3 +2,206 @@
   Override default refinery application CSS below.
   Formatting applies to all frontend.
 */
+
+body
+{
+  font-family: "myriad-pro-1","myriad-pro-2",sans-serif;
+  color:#5d5d5d;
+}
+
+#page_container
+{
+  padding:20px 0;
+  width:960px;
+  margin:0 auto;
+}
+
+h1, h2, h3, h4
+{
+  font-weight:300;
+}
+
+h1
+{
+  font-size:30px;
+  margin-bottom:0;
+}
+
+h2
+{
+  font-size:22px;
+}
+
+h3
+{
+  font-size:18px;
+  margin-bottom:5px;
+}
+
+p
+{
+  margin:10px 0;
+  font-size:14px;
+}
+
+a
+{
+  color:#4fa7d4;
+}
+
+a img
+{
+  border:none;
+}
+
+.green
+{
+  color:#77bf43;
+}
+
+.noMargin
+{
+  margin:0;
+}
+
+/* Structure */
+#body_content
+{
+  width:655px;
+}
+
+#body_content_title
+{
+  margin:5px 0 0 0;
+}
+
+/* Header */
+h1#logo
+{
+  margin:0;
+  float:left;
+  margin-right:50px;
+}
+
+#menu ul
+{
+  margin:0;
+  padding-top:17px;
+  list-style:none;
+}
+
+#menu ul li
+{
+  float:left;
+  margin-right:50px;
+}
+
+#menu ul li a
+{
+  font-weight:300;
+  text-decoration:none;
+  color:#77bf43;
+  font-size:24px;
+}
+
+#menu ul li a:hover, #menu ul li.selected a
+{
+  color:#313131;
+  border-bottom:3px #313131 solid;
+}
+
+/* Side bar */
+.sidebar
+{
+  width:280px;
+  float:right;
+}
+
+.sidebar h2
+{
+  margin-bottom:5px;
+  color:#77bf43;
+}
+
+.sidebar p
+{
+  margin-top:5px;
+}
+
+a.button
+{
+  display:inline-block;
+  background:#999999;
+  color:#fff;
+  padding:5px 10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  text-decoration:none;
+}
+
+/* Home Page */
+.box
+{
+  display:inline-block;
+  color:#656565;
+  width:180px;
+  margin:10px 18px 10px 0;
+  background:#fafafa;
+  border:1px solid #dedede;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  padding:10px;
+  height:260px;
+  float:left;
+  text-decoration:none;
+}
+
+.box:hover
+{
+  background:#313131;
+  color:#ccc;
+}
+
+.box.last
+{
+  margin-right:0;
+}
+
+.box h2, .box h3, .box p
+{
+  margin:0;
+}
+
+.box p, .box li
+{
+  font-size:14px;
+}
+
+p.dollar
+{
+  text-align:center;
+  color:#77bf43;
+  font-size:55px;
+  text-shadow: -2px -2px 1px #454545;
+}
+
+.box ul
+{
+  margin:0;
+  padding:0 0 0 15px;
+}
+
+/* Contact Us */
+table tr td:first-child
+{
+  vertical-align:top;
+}
+
+table tr.text td input, textarea
+{
+  background: #fafafa;
+  padding:3px;
+  border:1px solid #cecece;
+  font-family:arial;
+  font-size:13px;
+}

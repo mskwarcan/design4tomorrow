@@ -1,0 +1,47 @@
+<% content_for :body_content_left do %>
+  <div class='inquiries'>
+    <%=raw @page[Page.default_parts.first.to_sym] %>
+
+    <%= form_for @inquiry do |f| %>
+      <%= render :partial => "/shared/admin/error_messages",
+                 :locals => {
+                   :object => @inquiry,
+                   :include_object_name => true
+                 } %>
+      <table cellpadding="5">
+			<tr class="text">
+        <td><%= f.required_label :name %></td>
+        <td><%= f.text_field :name %></td>
+      </tr>
+      <tr class="text">
+        <td><%= f.required_label :email %></td>
+        <td><%= f.text_field :email %></td>
+      </tr>
+      <tr class="text">
+        <td><%= f.label :phone %></td>
+        <td><%= f.text_field :phone %></td>
+      </tr>
+			<tr>
+        <td><%= f.label :inquiry_type, "Reason For Contacting" %></td>
+        <td><select name="inquiry[inquiry_type]">
+					<option value="General Information">General Information</option>
+					<option value="Basic Plan">Interested in Basic Plan</option>
+					<option value="Advanced Plan">Interested in Advanced Plan</option>
+					<option value="Custom Plan">Interested in Custom Plan</option>
+					<option value="Web Designer">I am a Web Designer</option>
+					<option value="Other">Other</option>
+				</select></td>
+      </tr>
+      <tr class="text">
+        <td><%= f.required_label :message  %></td>
+        <td><%= f.text_area :message, :rows => 8 %></td>
+      </tr>
+      <tr class="actions">
+	<td></td>
+        <td><%= f.submit t('.send') %></td>
+      </tr>
+		</table>
+    <% end %>
+  </div>
+<% end %>
+<%= render :partial => "/shared/content_page" %>
