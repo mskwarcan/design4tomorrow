@@ -35,6 +35,7 @@ gem 'aws-s3', :require => 'aws/s3'
 
 gem 'refinerycms',              '= 0.9.9.9'
 gem 'refinerycms-inquiries', '~> 0.9.9.9'
+gem 'refinerycms-portfolio', '~> 0.9.9'
 
 
 group :development, :test do
