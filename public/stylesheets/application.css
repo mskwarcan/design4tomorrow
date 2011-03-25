@@ -207,6 +207,11 @@ p.dollar
   width:300px;
 }
 
+.join-the-team table tr.text td
+{
+  padding:5px;
+}
+
 /* Contact Us */
 table tr td:first-child
 {
