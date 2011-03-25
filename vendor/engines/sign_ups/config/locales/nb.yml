@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    sign_ups:
+      title: Sign Ups
+  admin:
+    sign_ups:
+      actions:
+        create_new: Lag en ny Sign Up
+        reorder: Endre rekkefølgen på Sign Ups
+        reorder_done: Ferdig å endre rekkefølgen Sign Ups
+      records:
+        title: Sign Ups
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Sign Ups enda. Klikk på "Lag en ny Sign Up" for å legge til din første sign up.
+      sign_up:
+        view_live_html: Vis hvordan denne sign up ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne sign up
+        delete: Fjern denne sign up permanent
+  sign_ups:
+    show:
+      other: Andre Sign Ups

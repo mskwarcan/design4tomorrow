@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    sign_ups:
+      title: Sign Ups
+  admin:
+    sign_ups:
+      actions:
+        create_new: CREATE NEW Sign Up
+        reorder: REORDR Sign Ups
+        reorder_done: DUN REORDERIN Sign Ups
+      records:
+        title: Sign Ups
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Sign Ups YET. CLICK "CREATE NEW Sign Up" 2 ADD UR FURST sign up.
+      sign_up:
+        view_live_html: VIEW DIS sign up LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS sign up
+        delete: REMOOV DIS sign up FOREVR
+  sign_ups:
+    show:
+      other: OTHR Sign Ups

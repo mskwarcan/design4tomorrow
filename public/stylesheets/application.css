@@ -161,12 +161,6 @@ a.button
   text-decoration:none;
 }
 
-.box:hover
-{
-  background:#313131;
-  color:#ccc;
-}
-
 .box.last
 {
   margin-right:0;
@@ -210,6 +204,17 @@ p.dollar
 .join-the-team table tr.text td
 {
   padding:5px;
+}
+
+/* Sign Up */
+table.zebra
+{
+    width:100%;
+}
+
+table.zebra tr:nth-child(2n-1)
+{
+  background:#f8fef7;
 }
 
 /* Contact Us */

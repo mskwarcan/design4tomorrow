@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    sign_ups:
+      title: Sign Ups
+  admin:
+    sign_ups:
+      actions:
+        create_new: Add New Sign Up
+        reorder: Reorder Sign Ups
+        reorder_done: Done Reordering Sign Ups
+      records:
+        title: Sign Ups
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Sign Ups yet. Click "Add New Sign Up" to add your first sign up.
+      sign_up:
+        view_live_html: View this sign up live <br/><em>(opens in a new window)</em>
+        edit: Edit this sign up
+        delete: Remove this sign up forever
+  sign_ups:
+    show:
+      other: Other Sign Ups

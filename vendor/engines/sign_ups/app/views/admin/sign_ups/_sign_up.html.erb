@@ -1,0 +1,15 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(sign_up) -%>">
+  <span class='title'>
+    <%= sign_up.name %>
+    <span class="preview">&nbsp;</span>
+  </span>
+  <span class='actions'>
+    <%= link_to refinery_icon_tag("eye.png"), edit_admin_sign_up_path(sign_up),
+         :title => t('.edit') %>
+    <%= link_to refinery_icon_tag("delete.png"), admin_sign_up_path(sign_up),
+        :class => "cancel confirm-delete",
+        :title => t('.delete'),
+        :confirm => t('message', :scope => 'shared.admin.delete', :title => sign_up.name),
+        :method => :delete %>
+  </span>
+</li>

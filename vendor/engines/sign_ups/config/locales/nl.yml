@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    sign_ups:
+      title: Sign Ups
+  admin:
+    sign_ups:
+      actions:
+        create_new: Maak een nieuwe Sign Up
+        reorder: Wijzig de volgorde van de Sign Ups
+        reorder_done: Klaar met het wijzingen van de volgorde van de Sign Ups
+      records:
+        title: Sign Ups
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Sign Ups. Druk op 'Maak een nieuwe Sign Up' om de eerste aan te maken.
+      sign_up:
+        view_live_html: Bekijk deze sign up op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze sign up
+        delete: Verwijder deze sign up voor eeuwig
+  sign_ups:
+    show:
+      other: Andere Sign Ups

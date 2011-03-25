@@ -1,0 +1,59 @@
+<% content_for :body_content_left do %>
+<p>Due to the complexity of most websites, we would like you to fill out the following form so we can get a better idea of what you want and make sure it fits into the plan you want.</p>
+
+<%= form_for @sign_up do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+          :object => @sign_up,
+          :include_object_name => true
+        } %>
+  
+  <table class="zebra" cellpadding=5 cellspacing=0>
+		<tr class="text">
+			<td width="250"><%= f.label :name -%></td>
+			<td><%= f.text_field :name -%></td>
+		</tr>
+		<tr class="text">
+			<td><%= f.label :email -%></td>
+			<td><%= f.text_field :email -%></td>
+		</tr>
+		<tr class="text">
+			<td><%= f.label :phone -%></td>
+			<td><%= f.text_field :email -%></td>
+		</tr>
+		<tr class="text">
+			<td><%= f.label :organization, "Organization Name" -%></td>
+			<td><%= f.text_field :organization -%></td>
+		</tr>
+		<tr>
+			<td><%= f.label :plan, "Which Plan are you interested in?" -%></td>
+			<td><select name="sign_up[plan]">
+				<option value="Basic">Basic</option>
+				<option value="Advanced">Advanced</option>
+				<option value="Custom">Custom</option>
+				</select></td>
+		</tr>
+		<tr class="text">
+			<td><%= f.label :deadline, "Deadline for site (optional)" -%></td>
+			<td><%= f.text_field :deadline -%></td>
+		</tr>
+		<tr class="text">
+			<td><%= f.label :current_site, "Do you have a current site? (optional)" -%></td>
+			<td><%= f.text_field :current_site -%></td>
+		</tr>
+		<tr class="text">
+			<td><%= f.label :information, "Information about your organization" -%></td>
+			<td><%= f.text_area :information, :rows => 6 -%></td>
+		</tr>
+		<tr class="text">
+			<td><%= f.label :additional, "Any Additional Information" -%></td>
+			<td><%= f.text_area :additional, :rows => 6 -%></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><%= f.submit "Sign Up" -%></td>
+		</tr>
+ 		</table>
+
+<% end %>
+<% end %>
+<%= render :partial => "/shared/content_page" %>

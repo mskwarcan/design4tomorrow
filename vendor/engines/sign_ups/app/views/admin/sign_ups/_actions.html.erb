@@ -1,0 +1,24 @@
+<ul>
+  <% if Admin::SignUpsController.searchable? %>
+    <li>
+      <%= render :partial => "/shared/admin/search",
+                  :locals => {
+                    :url => admin_sign_ups_url
+                  } %>
+    </li>
+  <% end %>
+<% if !searching? and Admin::SignUpsController.sortable? and SignUp.count > 1 %>
+  <li>
+    <%= link_to t('.reorder', :what => "Sign Ups"),
+                 admin_sign_ups_url,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Sign Ups"),
+                 admin_sign_ups_url,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>
