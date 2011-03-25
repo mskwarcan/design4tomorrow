@@ -196,6 +196,12 @@ p.dollar
   padding:0 0 0 15px;
 }
 
+/* Join the Team */
+.join-the-team li
+{
+  margin:10px 0;
+}
+
 /* Contact Us */
 table tr td:first-child
 {
