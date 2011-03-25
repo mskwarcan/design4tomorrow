@@ -202,6 +202,11 @@ p.dollar
   margin:10px 0;
 }
 
+.join-the-team table tr.text td input, textarea
+{
+  width:300px;
+}
+
 /* Contact Us */
 table tr td:first-child
 {
