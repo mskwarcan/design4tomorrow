@@ -1,0 +1,18 @@
+<% content_for :body_content_title do -%>
+  Portfolios
+<% end -%>
+
+<% content_for :body_content_left do -%>
+	<% if @portfolio_entries.empty? %>
+		<p>Due to the fact that we have just started, we don't currently have anything in our portfolio yet. Please check back soon.</p>
+	<% else %>
+  <% @portfolio_entries.each do | portfolio | -%>
+    <span>
+      <%= link_to raw("#{image_fu portfolio.title_image, '200x200' unless portfolio.title_image.nil?} #{portfolio.title}"),
+                  portfolio_path(portfolio) %>
+    </span>
+  <% end -%>
+	<% end %>
+<% end -%>
+
+<%= render :partial => '/shared/content_page' -%>
