@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
   def join_the_team
     JoinMailer.join_email(params[:join]).deliver unless refinery_user?
     
-    redirect_to('/join-the-team')
+    redirect_to('/join-the-team-thank-you')
   end
 end
