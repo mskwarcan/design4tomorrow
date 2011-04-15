@@ -24,8 +24,8 @@ class SignUpsController < ApplicationController
 
     respond_to do |format|
          if @sign_up.save
-           SignUpMailer.signup_mail(@sign_up).deliver unless refinery_user?
-           format.html { render :action => "index"}
+           SignupMailer.signup_email(@sign_up).deliver unless refinery_user?
+           format.html { render :action => "/sign-up-thank-you"}
            format.xml  { render :xml => @sign_up, :status => :created, :location => @sign_up }
          else
            format.html { render :action => "index" }

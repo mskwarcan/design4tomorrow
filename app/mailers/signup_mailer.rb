@@ -1,4 +1,4 @@
-class SignUpMailer < ActionMailer::Base
+class SignupMailer < ActionMailer::Base
   default :from => "sign_up@design4tomorrow.net"
   
   def signup_email(sign_up)

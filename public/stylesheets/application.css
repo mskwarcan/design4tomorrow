@@ -9,6 +9,11 @@ body
   color:#5d5d5d;
 }
 
+#page
+{
+  padding:0;
+}
+
 #page_container
 {
   padding:20px 0;
@@ -230,4 +235,18 @@ table tr.text td input, textarea
   border:1px solid #cecece;
   font-family:arial;
   font-size:13px;
+}
+
+/* footer */
+footer
+{
+  clear:left;
+}
+
+/* Errors */
+.errorExplantion
+{
+  margin:5px 0;
+  border: 3px solid #F27F7F;
+  padding:5px 10px;
 }

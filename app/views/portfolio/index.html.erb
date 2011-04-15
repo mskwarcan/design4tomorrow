@@ -3,7 +3,7 @@
 <% end -%>
 
 <% content_for :body_content_left do -%>
-	<% if @portfolio_entries.empty? %>
+	<% if @portfolio_entries.nil? %>
 		<p>Due to the fact that we have just started, we don't currently have anything in our portfolio yet. Please check back soon.</p>
 	<% else %>
   <% @portfolio_entries.each do | portfolio | -%>
